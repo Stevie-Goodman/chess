@@ -19,6 +19,8 @@ Created by a group of first-year University of Lincoln students over the 2022 Su
 @Stevie-Goodman
 
 **Team Members**  
- @Jgbrock178  
- @LChip2002  
- @KIERAN-RAWLINGS
+@Jgbrock178  
+@LChip2002  
+@KIERAN-RAWLINGS
+@SJO-C
+@skyecas12
