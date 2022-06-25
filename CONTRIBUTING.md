@@ -5,6 +5,10 @@ In order to ensure that consistency is maintained across commits and pull reques
  * Code should be written to be compliant with Microsoft's [C# Coding Conventions](https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions) document.
  * Whilst it may be tempting to write concise and elegant code, please keep code simple and legible. This makes code easier to interpret for team members with less experience.
 
+## Research
+ * When performing research, document your findings in the wiki.
+ * Research should be located in a new "Research" H2 in the relevant feature's wiki page.
+
 ## Issues
  * Issues should be appropriately tagged, titled and given a comprehensive description. There are issue templates for you to employ.
  * If you find a bug that cannot be immediately fixed, create an issue using the bug template. Stevie will then assign the issue to an appropriate team member.
