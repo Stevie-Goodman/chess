@@ -6,8 +6,7 @@ In order to ensure that consistency is maintained across commits and pull reques
  * Whilst it may be tempting to write concise and elegant code, please keep code simple and legible. This makes code easier to interpret for team members with less experience.
 
 ## Research
- * When performing research, document your findings in the wiki.
- * Research should be located in a new "Research" H2 in the relevant feature's wiki page.
+ * When performing research, document your findings in a new discussion in the research category.
 
 ## Issues
  * Issues should be appropriately tagged, titled and given a comprehensive description. There are issue templates for you to employ.
