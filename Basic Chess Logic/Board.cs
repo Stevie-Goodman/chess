@@ -8,7 +8,6 @@ public class Board
     {
         InitializeBoard();
         //Set the size of the board. 
-        SetStartingPieces();
         PrintBoard();
     }
     public void InitializeBoard()
@@ -22,38 +21,24 @@ public class Board
             }
         }
     }
-    private void SetStartingPieces()
+
+    public void UpdateBoard(int[,] allLocations)
     {
-        Piece p = null;
-        //Setting all pawns 
-        for (int i = 0; i < 8; i++)
+        
+        // Update the board using all locations passed through. 
+
+        for(int i = 0; i < 32; i++)
         {
-            _board[1, i] = 6;
-            _board[6, i] = -6;
-            p = new Piece("Pawn", "blue", i, 1);
-            //TODO - make all of the p's stay. Instead of being written over.... consider not looping?
+            Console.WriteLine(allLocations[i,0]);
+            
+            _board[allLocations[i, 2], allLocations[i, 1]] = allLocations[i, 0];
         }
-
-        p.PrintPiece();
-
-        //Setting all other pieces
-        _board[0, 0] = 3;
-        _board[0, 1] = 5;
-        _board[0, 2] = 4;
-        _board[0, 3] = 1;
-        _board[0, 4] = 2;
-        _board[0, 5] = 4;
-        _board[0, 6] = 5;
-        _board[0, 7] = 3;
-        _board[7, 0] = -3;
-        _board[7, 1] = -5;
-        _board[7, 2] = -4; 
-        _board[7, 3] = -1; 
-        _board[7, 4] = -2;
-        _board[7, 5] = -4;
-        _board[7, 6] = -5;
-        _board[7, 7] = -3;
+       
+        
+        // public Pawn PawnBlack3 = new Pawn( "black", new[] { 7, 6 });
+        // Incoming data Format = { PawnBlack8._name, PawnBlack8.Position[0], PawnBlack8.Position[1] }
     }
+    
     public void PrintBoard()
     {
         int rowLength = _board.GetLength(0);

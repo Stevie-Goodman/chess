@@ -13,3 +13,20 @@
 // -0 for opponent. 
 Board board = new Board();
 
+string? user1 = "";
+string? user2 = "";
+bool CreatePlayers()
+{
+    Console.WriteLine("User1: ");
+    user1 = Console.ReadLine();
+    Console.WriteLine("User2: ");
+    user2 = Console.ReadLine();
+    return true;
+}
+
+
+Piece piece = new Piece();
+piece.GetAllLocations();
+// Used to update the board with the new pieces.
+board.UpdateBoard(piece.GetAllLocations());
+board.PrintBoard();
