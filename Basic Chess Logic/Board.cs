@@ -7,8 +7,6 @@ public class Board
     public Board()
     {
         InitializeBoard();
-        //Set the size of the board. 
-        PrintBoard();
     }
     public void InitializeBoard()
     {
@@ -29,14 +27,9 @@ public class Board
 
         for(int i = 0; i < 32; i++)
         {
-            Console.WriteLine(allLocations[i,0]);
-            
+            // Console.WriteLine(allLocations[i,0]);
             _board[allLocations[i, 2], allLocations[i, 1]] = allLocations[i, 0];
         }
-       
-        
-        // public Pawn PawnBlack3 = new Pawn( "black", new[] { 7, 6 });
-        // Incoming data Format = { PawnBlack8._name, PawnBlack8.Position[0], PawnBlack8.Position[1] }
     }
     
     public void PrintBoard()
@@ -60,4 +53,10 @@ public class Board
             Console.Write(Environment.NewLine + Environment.NewLine);
         }
     }
+
+    public int[,] ReturnBoard()
+    {
+        return _board;
+    }
+    
 }

@@ -9,7 +9,7 @@ public class Piece
     public Queen QueenBlack = new Queen("black", new []{3, 0});
     public Rook RookWhite1 = new Rook("White", new[] { 7, 7 });
     public Rook RookBlack1 = new Rook("black", new[] { 0, 0 });
-    public Rook RookWhite2 = new Rook("White", new[] { 7, 7 });
+    public Rook RookWhite2 = new Rook("White", new[] { 0, 7 });
     public Rook RookBlack2 = new Rook("black", new[] { 7, 0 });
     public Bishop BishopWhite1 = new Bishop( "White", new[] { 2, 7});
     public Bishop BishopBlack1 = new Bishop( "black", new[] { 2, 0 });
@@ -88,8 +88,14 @@ public class Piece
             _color = colour;
             Position = location;
         }
-        public void Move()
+        public void Move(Board board)
         {
+            int[,] returnBoard = board.ReturnBoard();
+            
+            //TODO - Check if it can move to a position
+            
+            // int up = returnBoard[Position[0], Position[1]];
+            
             Console.WriteLine("King can move in any 4 direction - 1 sqre at a time");
         }
         public void PrintKing()

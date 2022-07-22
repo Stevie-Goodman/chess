@@ -30,3 +30,7 @@ piece.GetAllLocations();
 // Used to update the board with the new pieces.
 board.UpdateBoard(piece.GetAllLocations());
 board.PrintBoard();
+
+
+
+piece.KingBlack.Move(board);
